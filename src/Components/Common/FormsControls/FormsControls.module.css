@@ -1,0 +1,15 @@
+.formControl {
+    display: flex;
+    align-items: center;
+}
+
+.formControl.error input {
+    border: solid red 1px;
+}
+
+.formControl.error span {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: red;
+}
+

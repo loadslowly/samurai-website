@@ -1,0 +1,12 @@
+.active {
+    color: #9146ff !important;
+}
+
+.first {
+    margin-right: 15px;
+}
+
+.numbers span {
+    padding-right: 15px;
+    cursor: pointer;
+}

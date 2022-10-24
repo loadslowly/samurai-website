@@ -1,0 +1,35 @@
+.user_of_dialogs:first-child {
+    margin-left: 0px;
+}
+
+.user_of_dialogs {
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.user_of_dialogs img{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.user_of_dialogs img:hover {
+    border: 2px solid #9146ff;
+}
+
+.user_of_dialogs li {
+    list-style: none;
+}
+
+.user_of_dialogs a {
+   text-decoration: none;
+}
+
+.active {
+    color: #9146ff !important;
+}
+
+.item {
+    color: #f0f0ff;
+}

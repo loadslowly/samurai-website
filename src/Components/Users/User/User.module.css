@@ -1,0 +1,66 @@
+.list_of_users {
+    margin: 80px auto;
+    min-width: 90%;
+}
+
+.list_of_users h3:first-child {
+    margin-top: 0px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user_of_dialogs:first-child {
+    margin-left: 0px;
+}
+
+
+.pic {
+    text-align: center;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pic img{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.pic img:hover {
+    border: 2px solid #9146ff;
+}
+
+.pic li {
+    list-style: none;
+}
+
+.pic a {
+    text-decoration: none;
+}
+
+.item {
+    color: #f0f0ff;
+}
+
+.description {
+    margin-left: 50px;
+}
+
+.description h3 {
+    margin-top: 0px;
+}
+
+.geolocation {
+    margin-left: 50px;
+}
+
+.geolocation h3{
+    margin-top: 0px;
+}
+
+

@@ -1,0 +1,12 @@
+.form {
+    justify-content: center;
+    padding-top: 15px;
+    max-width: 200px;
+}
+
+.formSummaryError {
+    border: red 1px solid;
+    padding: 5px 3px;
+    margin: 5px;
+    color: red;
+}

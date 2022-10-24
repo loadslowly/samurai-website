@@ -1,0 +1,28 @@
+.messages {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.dialog_user {
+    text-align: center;
+    padding-right: 50px;
+}
+
+.messages div img {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.messages p {
+    margin-top: 5px;
+}
+
+.answer {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    max-width: 900px;
+}
+

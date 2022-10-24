@@ -1,0 +1,50 @@
+.sidebar {
+    margin: 70px 0px;
+    padding-left: 50px;
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+
+.sidebar ul {
+    padding: 0px;
+}
+
+.sidebar ul div {
+    margin-bottom: 5px;
+}
+
+.sidebar a:hover {
+    color: #9146ff;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #f0f0ff;
+}
+
+.findUsers {
+    margin-top: 25px;
+}
+
+.settings {
+    margin-top: 25px;
+}
+
+.navigation div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.navigation div img {
+    height: 25px;
+    width: 25px;
+    padding-right: 5px;
+}
+

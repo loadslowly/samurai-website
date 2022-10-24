@@ -5,6 +5,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #000 no-repeat center center fixed;
+  color: #f0f0ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+a:hover {
+  color: #9146ff;
+  cursor: pointer;
+}
+
+NavLink:hover {
+  color: #9146ff;
+  cursor: pointer;
 }
 
 code {

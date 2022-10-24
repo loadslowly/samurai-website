@@ -1,0 +1,18 @@
+.profile_body {
+    display: flex;
+    margin: 80px auto;
+    min-width: 90%;
+}
+
+.profile_left img {
+    height: 200px;
+    width: 200px;
+}
+
+.profile_right {
+    margin-left: 50px;
+}
+
+.profile_right .description li {
+    list-style: none;
+}
