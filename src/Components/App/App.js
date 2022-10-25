@@ -28,7 +28,7 @@ class App extends Component {
                 <HeaderContainer/>
                 <div className={classes.content}>
                     <Suspense fallback={<Preloader />}>
-                    <Routes>
+                    <Routes >
                         <Route path="/profile/:userId" element={<ProfileContainer/>}/>
                         <Route path='/profile' element={<ProfileContainer/>}/>
                         <Route path="/dialogs/*" element={<DialogsContainer/>}/>
