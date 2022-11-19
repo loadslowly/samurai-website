@@ -1,7 +1,32 @@
 .profile_body {
     display: flex;
-    margin: 80px auto;
+    margin: 80px 0px auto;
     min-width: 90%;
+}
+
+.profile_body_children {
+    display: flex;
+}
+
+@media screen and (max-width: 1290px) {
+    .profile_body {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .profile_body {
+        display: block !important;
+    }
+    .profile_body_children {
+        display: block;
+    }
+    .profile_center {
+        margin-left: 0px !important;
+    }
+    .editPanel {
+        display: block !important;
+    }
 }
 
 .profile_left img {
@@ -9,10 +34,71 @@
     width: 200px;
 }
 
-.profile_right {
+.profile_center {
     margin-left: 50px;
 }
 
-.profile_right .description li {
+.profile_center .description li {
     list-style: none;
 }
+
+.profile_right {
+    margin-left: auto;
+}
+
+.formSummaryError {
+    border: red 1px solid;
+    padding: 5px 3px;
+    margin: 5px;
+    color: red;
+}
+
+.input_file_button {
+    margin: 0;
+    width: 100%;
+    max-width: 290px;
+    color: white;
+    justify-content: flex-start;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 6px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+.titleOfEditPanel {
+    margin-top: 0px;
+}
+
+.editPanel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    margin: 10px auto;
+}
+
+form button {
+    margin-top: 25px;
+}
+
+.separateLine {
+    display: inline-block;
+}
+
+.inputWrapper {
+    position: relative;
+    margin: 15px 30px;
+    text-align: center;
+}
+
+.inputFile {
+    display: none;
+}
+
+
+

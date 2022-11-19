@@ -1,7 +1,40 @@
 .post {
     margin-top: 50px;
-    width: 390px;
-    padding-right: 20px;
+    padding: 0px 15px;
+    width: 400px;
+}
+
+@media screen and (max-width: 1617px) {
+    .post {
+        all: unset;
+        display: flex;
+    }
+    .post_text {
+        flex-shrink: 10;
+    }
+    .post_text p{
+        font-size: 20px;
+        margin-top: 0px;
+        padding-left: 15px;
+    }
+    .post_image img {
+        height: 300px !important;
+        width: 450px !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .post {
+        all:unset;
+        display: block;
+        margin-top: 50px;
+        padding: 0px 15px;
+        width: 400px;
+    }
+    .post_image img {
+        height: 300px !important;
+        width: 350px !important;
+    }
 }
 
 .post .post_image img {

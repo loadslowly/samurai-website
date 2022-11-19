@@ -9,6 +9,7 @@
 
 .all_dialogs {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .dialog {

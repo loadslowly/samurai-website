@@ -16,7 +16,7 @@ const DialogsForm = (props) => {
                    component={Input}
                    validate={[Required,MaxLength100]}
                    className={classes.input}/>
-            <button type={"submit"} >submit</button>
+            <button type={"submit"} className={"buttonStyle"} >Submit</button>
         </form>
     );
 }

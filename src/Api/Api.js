@@ -12,15 +12,21 @@ export const usersAPI = {
     getUsers(pageNumber, pageSize) {
         return instance.get(`users?page=${pageNumber}&count=${pageSize}`).then(response => response.data);
     },
-    getProfile(userId) {
-        console.warn('Obsolete method. Please use profileAPI.')
-        return profileAPI.getProfile(userId);
-    },
     deleteFollow(userId) {
         return  instance.delete(`follow/${userId}`)
     },
     addFollow(userId){
         return  instance.post(`follow/${userId}`, {})
+    },
+    savePhoto(photoFile) {
+        const formData =  new FormData();
+        formData.append("image", photoFile);
+
+        return instance.put(`profile/photo`, formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
+        });
     }
 }
 
@@ -33,6 +39,9 @@ export const profileAPI = {
     },
     updateStatus(status) {
         return instance.put(`profile/status/`, {status: status});
+    },
+    saveProfile(profile) {
+        return instance.put(`profile`, profile);
     }
 }
 
@@ -40,11 +49,17 @@ export const authAPI = {
     me() {
         return instance.get(`auth/me`).then(response => response.data);
     },
-    login(email, password, rememberMe = false) {
-        return instance.post(`auth/login`, {email, password, rememberMe});
+    login(email, password, rememberMe = false, captcha = null) {
+        return instance.post(`auth/login`, {email, password, rememberMe, captcha});
     },
     logout() {
         return instance.delete(`auth/login`);
+    }
+}
+
+export const securityAPI = {
+    getCaptchaURL() {
+        return instance.get(`security/get-captcha-url`);
     },
 }
 

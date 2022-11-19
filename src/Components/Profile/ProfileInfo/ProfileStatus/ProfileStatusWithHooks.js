@@ -26,7 +26,7 @@ const ProfileStatusWithHooks = (props) => {
             {!editMode &&
                 <div>
                     <span onDoubleClick={activateEditMode}>
-                        {props.status || "undefined :/ "}
+                        <span className={'allocator'}>Status:</span> {props.status || "undefined :/ "}
                     </span>
                 </div>
             }

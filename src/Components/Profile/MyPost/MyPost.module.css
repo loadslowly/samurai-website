@@ -1,6 +1,5 @@
 .post {
     max-width: 390px;
-    padding-right: 20px;
 }
 
 .post .post_image img {
@@ -13,6 +12,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+    .all_posts {
+        justify-content: center !important;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .content_input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h1 {
+        text-align: center;
+    }
 }
 
 .profile_post a img {
@@ -45,13 +61,14 @@
     flex-wrap: wrap;
 }
 
-.myPosts textarea{
+.myPosts textarea {
     display: block;
 }
 
 .all_posts {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .message_answer {
@@ -99,11 +116,10 @@
     justify-content: center;
 }
 
-.message_answer button{
+.message_answer button {
     max-width: 100px;
     margin-top: 15px;
 }
-
 
 .message_answer .submit:hover {
     opacity: 0.8;
@@ -111,4 +127,38 @@
 
 input[type="search"] {
     -webkit-appearance: none;
+}
+
+.content_input {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content_input .file_input {
+    margin-left: 30px;
+}
+
+.input__wrapper {
+    position: relative;
+    margin: 15px 30px;
+    text-align: center;
+}
+
+.input__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.input__file_button {
+    margin: 0;
+    width: 100%;
+    max-width: 290px;
+    color: #fff;
+    justify-content: flex-start;
+    border-radius: 3px;
+    border: 1px solid white;
+    padding: 6px;
+    cursor: pointer;
 }

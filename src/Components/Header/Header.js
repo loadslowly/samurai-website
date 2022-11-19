@@ -4,6 +4,7 @@ import logo from "../../Resource/Images/logo.png";
 import {NavLink} from "react-router-dom";
 
 const Header = (props) => {
+    // TODO: ОТОБРАЖАТЬ АКТИВНУЮ ФОТОГРАФИЮ ПРОФИЛЯ
     return (
         <div className={classes.header}>
             <div className={classes.profile_head}>
@@ -22,7 +23,9 @@ const Header = (props) => {
                     <div className={classes.profile_user_info}>
                         <a><h5>{props.login}</h5></a>
                         <a><img src={ava}/></a>
-                        <a><button onClick={props.logout}>logout</button></a>
+                        <a>
+                            <button onClick={props.logout}>logout</button>
+                        </a>
                     </div>
                     :
                     <div className={classes.profile_user_info}>

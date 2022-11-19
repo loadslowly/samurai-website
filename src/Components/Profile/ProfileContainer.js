@@ -1,7 +1,14 @@
 import React from "react";
 import Profile from "./Profile";
 import {connect} from "react-redux";
-import {getProfile, getStatus, setUserProfile, updateStatus} from "../../Redux/ProfileReducer";
+import {
+    getProfile,
+    getStatus,
+    savePhoto,
+    saveProfile,
+    setUserProfileAC,
+    updateStatus
+} from "../../Redux/ProfileReducer";
 import {useLocation, useNavigate, useParams} from "react-router-dom";
 import {WithAuthRedirect} from "../Hoc/WithAuthRedirect";
 import {compose} from "redux";
@@ -24,24 +31,30 @@ function withRouter(Component) {
 
 class ProfileContainer extends React.Component {
 
-    componentDidMount() {
+    refreshProfile() {
         let userId = this.props.router.params.userId;
 
         if (!userId) {
             userId = this.props.userID;
-            if (!userId) {
-                // TODO: ДАТЬ ПРОСМОТР СТРАНИЦ ПОЛЬЗОВАТЕЛЕЙ БЕЗ ВХОДА НА САЙТ
-            }
         }
 
         this.props.getProfile(userId);
         this.props.getStatus(userId);
+    }
 
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (this.props.router.params.userId !== prevProps.router.params.userId) {
+            this.refreshProfile();
+        }
+    }
+
+    componentDidMount() {
+        this.refreshProfile();
     }
 
     render() {
         return (
-            <Profile {...this.props}/>
+            <Profile {...this.props} isOwner={!this.props.router.params.userId} savePhoto={this.props.savePhoto}/>
         )
     }
 }
@@ -54,7 +67,7 @@ let mapStateToProps = (state) => ({
 });
 
 export default compose(
-    connect(mapStateToProps,{setUserProfile, getProfile, getStatus, updateStatus}),
+    connect(mapStateToProps, {setUserProfileAC, getProfile, getStatus, updateStatus, savePhoto, saveProfile}),
     withRouter,
     WithAuthRedirect
 )(ProfileContainer);

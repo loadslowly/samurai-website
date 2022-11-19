@@ -6,3 +6,7 @@
 .content {
     display: flex;
 }
+
+.notfound {
+    margin: 80px auto;
+}

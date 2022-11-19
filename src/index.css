@@ -25,3 +25,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.unhandledError {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgb(145, 70, 255);
+}
+
+.unhandledError h3{
+  margin-left: 15px;
+}
+
+.buttonStyle {
+  padding: 3px 15px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: white;
+}
+
+.allocator {
+  color: rgb(153, 85, 255);
+}
+
