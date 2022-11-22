@@ -29,12 +29,13 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    margin-right: 20px;
 }
 
 .profile_user_info {
     display: flex;
     align-items: center;
-    padding-right: 40px;
 }
 
 .profile_user_info a img {
@@ -53,9 +54,9 @@ a {
 }
 
 .search {
+    display: none;
     width: 25%;
     position: relative;
-    display: flex;
     height: 40%;
 }
 
@@ -108,3 +109,47 @@ a {
 input[type="search"] {
     -webkit-appearance: none;
 }
+
+.navigation li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.menu_phones ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_creator {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .profile_head {
+        justify-content: space-evenly;
+    }
+    .login {
+        display: none;
+    }
+    .menu_creator {
+        display: block;
+    }
+    .profile_user_info a:hover {
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .profile_head {
+        justify-content: space-evenly;
+    }
+    .logo_text {
+        display: none;
+    }
+}
+
+
+
+

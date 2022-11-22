@@ -1,6 +1,7 @@
 .list_of_users {
     margin: 80px auto;
     min-width: 90%;
+    padding: 0px 20px;
 }
 
 .list_of_users h3:first-child {

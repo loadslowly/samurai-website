@@ -1,5 +1,5 @@
 .wrapper {
-    max-width: 84%;
+    max-width: 85%;
     margin-left: 220px;
 }
 
@@ -9,4 +9,10 @@
 
 .notfound {
     margin: 80px auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        all: unset;
+    }
 }

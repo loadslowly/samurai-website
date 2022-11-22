@@ -29,11 +29,12 @@
         display: block;
         margin-top: 50px;
         padding: 0px 15px;
-        width: 400px;
+    }
+    .post_image {
+        text-align: center;
     }
     .post_image img {
         height: 300px !important;
-        width: 350px !important;
     }
 }
 

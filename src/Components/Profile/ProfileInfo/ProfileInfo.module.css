@@ -11,13 +11,11 @@
 @media screen and (max-width: 1290px) {
     .profile_body {
         flex-wrap: wrap;
+        display: block !important;
     }
 }
 
-@media screen and (max-width: 940px) {
-    .profile_body {
-        display: block !important;
-    }
+@media screen and (max-width: 1000px) {
     .profile_body_children {
         display: block;
     }
@@ -27,7 +25,11 @@
     .editPanel {
         display: block !important;
     }
+    .profile_body {
+        text-align: center;
+    }
 }
+
 
 .profile_left img {
     height: 200px;
@@ -78,7 +80,7 @@
     align-items: center;
 }
 
-button {
+.profile_left button {
     margin: 10px auto;
 }
 

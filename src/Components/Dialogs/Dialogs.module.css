@@ -4,7 +4,6 @@
 }
 .dialogs h3:first-child {
     margin-top: 0px;
-    display: inline-block;
 }
 
 .all_dialogs {
@@ -12,12 +11,7 @@
     flex-wrap: wrap;
 }
 
-.dialog {
-    margin-top: 30px;
-}
-
 .message_answer {
-    width: 100%;
     position: relative;
     display: flex;
     height: 40%;
@@ -71,7 +65,24 @@
     margin-top: 15px;
 }
 
+.dialog {
+    align-items: center;
+}
+
 input[type="search"] {
     -webkit-appearance: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .all_dialogs {
+        justify-content: center;
+    }
+    h3 {
+        text-align: center;
+    }
+    .form_dialog {
+        display: flex;
+        justify-content: center;
+    }
 }
 

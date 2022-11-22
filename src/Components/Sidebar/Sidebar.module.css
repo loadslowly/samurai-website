@@ -48,3 +48,8 @@
     padding-right: 5px;
 }
 
+@media screen and (max-width: 1000px) {
+    .sidebar {
+        display: none;
+    }
+}

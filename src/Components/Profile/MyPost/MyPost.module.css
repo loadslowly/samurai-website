@@ -17,10 +17,8 @@
 @media screen and (max-width: 1000px) {
     .all_posts {
         justify-content: center !important;
+        padding: 0 100px;
     }
-}
-
-@media screen and (max-width: 940px) {
     .content_input {
         display: flex;
         align-items: center;
@@ -29,7 +27,11 @@
     h1 {
         text-align: center;
     }
+    .post_image {
+        text-align: center;
+    }
 }
+
 
 .profile_post a img {
     border: 2px solid #000;

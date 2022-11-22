@@ -2,11 +2,30 @@
     color: #9146ff !important;
 }
 
-.first {
-    margin-right: 15px;
+.numbers button{
+    margin: 0px;
+}
+
+.numbers .first {
+    margin-right: 15px !important;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
 }
 
 .numbers span {
     padding-right: 15px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .numbers {
+        justify-content: center;
+    }
+    h3 {
+        text-align: center;
+    }
 }
