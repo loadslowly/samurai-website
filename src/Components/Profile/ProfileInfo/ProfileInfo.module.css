@@ -38,6 +38,8 @@
 
 .profile_center {
     margin-left: 50px;
+    word-wrap: break-word;
+    overflow-x: hidden;
 }
 
 .profile_center .description li {
@@ -101,6 +103,7 @@ form button {
 .inputFile {
     display: none;
 }
+
 
 
 

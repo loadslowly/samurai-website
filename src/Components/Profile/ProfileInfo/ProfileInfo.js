@@ -73,7 +73,7 @@ const ProfileData = ({profile, props}) => {
 
 const Contact = ({contactTitle, contactValue}) => {
     return (
-        contactValue ? <div><span className={'allocator'}>{contactTitle}:</span> {contactValue}</div> : null
+        contactValue ? <div className={classes.contacts}><span className={'allocator'}>{contactTitle}:</span> {contactValue}</div> : null
     );
 }
 
