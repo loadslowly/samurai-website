@@ -4,8 +4,7 @@ import {NavLink} from "react-router-dom";
 
 const User = ({user, followingProgress, unfollow, follow}) => {
     return (
-        <div key={user.id}>
-            <div className={classes.user}>
+            <div key={user.id} className={classes.user}>
                 <div className={classes.pic}>
                     <NavLink to={'/profile/' + user.id}>
                         <img src={user.photos.small != null ? user.photos.small : ava}/>
@@ -20,16 +19,17 @@ const User = ({user, followingProgress, unfollow, follow}) => {
                             }}>Follow</button>
                     }
                 </div>
-                <div className={classes.description}>
-                    <h3>{user.name}</h3>
-                    <p>{user.status}</p>
-                </div>
-                <div className={classes.geolocation}>
-                    <h3>Country</h3>
-                    <p>City</p>
+                <div className={classes.user_info}>
+                    <div className={classes.description}>
+                        <h3>{user.name}</h3>
+                        <p>{user.status}</p>
+                    </div>
+                    <div className={classes.geolocation}>
+                        <h3>Country</h3>
+                        <p>City</p>
+                    </div>
                 </div>
             </div>
-        </div>
     );
 }
 

@@ -12,10 +12,12 @@ const Users = ({
         <h3>Users</h3>
         <Paginator totalUsersCount={totalUsersCount} pageSize={pageSize} currentPage={currentPage}
                    onPageChanged={onPageChanged}/>
+        <div className={classes.user_wrapper}>
         {
-            usersInfo.map(user => <User user={user} followingProgress={props.followingProgress} follow={props.follow}
+            usersInfo.map(user =>  <User user={user} followingProgress={props.followingProgress} follow={props.follow}
                                         unfollow={props.unfollow}/>)
         }
+        </div>
         {isFetching ? <Preloader/> : null}
     </div>
 }
